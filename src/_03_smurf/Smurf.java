@@ -1,4 +1,7 @@
 package _03_smurf;
+
+import java.awt.Color;
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
@@ -31,13 +34,27 @@ public class Smurf {
 	/* Papa Smurf wears a red hat, all the others are white. */
 	public String getHatColor() {
 		// 3. Fill in this method
-		return "";
+		String hatcolor="";
+		if (this.name.equals("Papa")){
+			hatcolor="red";
+		}else {
+		hatcolor="white";
+		
 	}
+		return hatcolor;
+		}
 
 	/* Smurfette is the only female Smurf. */
 	public String isGirlOrBoy() {
 		// 4. Fill in this method
-		return "";
+		String gender="";
+		if (this.name.equals("Smurfette")){
+			gender="girl";
+		}else {
+			gender="boy";
+		}
+		return gender;
+	
 	}
 
 }
